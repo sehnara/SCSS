@@ -1,0 +1,8 @@
+@charset "UTF-8";
+/* 전체 주석 : css도 같이 적용*/
+.btn1 { display: block; width: 200px; height: 50px; line-height: 50px; font-size: 30px; color: #c9c9c9; background-color: #fff; border: 1px solid #c9c9c9; text-align: center; text-decoration: none; }
+.btn1:hover { background-color: #c9c9c9; color: #fff; }
+
+.btn2 { display: block; width: 200px; height: 50px; line-height: 50px; font-size: 30px; color: blue; background-color: red; border: 1px solid blue; text-align: center; text-decoration: none; }
+
+/*# sourceMappingURL=1_2_variable.css.map */

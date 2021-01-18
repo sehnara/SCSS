@@ -1,0 +1,43 @@
+//1. 주석
+// 한줄 주석 : scss만 가능
+/* 전체 주석 : css도 같이 적용*/
+
+// 변수 :
+// 영문
+// 영문 + 숫자
+// 영문_숫자
+// 대소문자
+
+$gray: #c9c9c9;
+$white: #fff;
+$blue: blue;
+$red: red;
+$fs30: 30px;
+.btn1 {
+  display: block;
+  width: 200px;
+  height: 50px;
+  line-height: 50px;
+  font-size: $fs30;
+  color: $gray;
+  background-color: $white;
+  border: 1px solid $gray;
+  text-align: center;
+  text-decoration: none;
+  &:hover {
+    background-color: $gray;
+    color: $white;
+  }
+}
+.btn2 {
+  display: block;
+  width: 200px;
+  height: 50px;
+  line-height: 50px;
+  font-size: $fs30;
+  color: $blue;
+  background-color: $red;
+  border: 1px solid $blue;
+  text-align: center;
+  text-decoration: none;
+}
