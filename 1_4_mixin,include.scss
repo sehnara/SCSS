@@ -1,0 +1,43 @@
+// 자주 쓰는데 계속 치기 힘든 것들 이것으로 정리!
+
+// @mixin = @keyframe ani{}
+// @include = animation-name : ani
+
+// @mixin test {
+//   width: 100px;
+//   height: 100px;
+//   border: 1px red solid;
+// }
+
+// @mixin clear {
+//   &:after {
+//     // :after : 선택한 요소의 맨 마지막에 자식 요소 하나 더 생성 <--> before
+//     content: "";
+//     display: block;
+//     // clear : float를 쓴 다음 어떤 요소에 끝을 맞춰야 하는 지 결정(프로퍼티 : none, left, right, both)
+//     clear: both;
+//   }
+// }
+// div {
+//   border: 3px solid blue;
+//   //@include clear();
+// }
+// // p {
+// //   float: left;
+// //   @include test();
+// // }
+
+// 매개변수로 전달하기
+@mixin border($color) {
+  border: 3px solid $color;
+}
+
+@mixin box($w, $h) {
+  width: $w;
+  height: $h;
+}
+
+div {
+  @include box(300px, 400px);
+  @include border(red);
+}
