@@ -21,4 +21,16 @@
 
 .list li:nth-child(5):before { content: "제목5"; }
 
+.ico_1 { background: url(images/1.jpg) no-repeat; }
+
+.ico_2 { background: url(images/2.jpg) no-repeat; }
+
+.ico_3 { background: url(images/3.jpg) no-repeat; }
+
+h1 { font-size: 30px; }
+
+h2 { font-size: 20px; }
+
+h3 { font-size: 15px; }
+
 /*# sourceMappingURL=1_6_for.css.map */
