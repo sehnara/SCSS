@@ -1,0 +1,10 @@
+@mixin box($position, $wid, $color) {
+  border-#{$position}: $wid solid $color;
+}
+
+div {
+  @include box(right, 2px, red);
+}
+p {
+  @include box(bottom, 5px, blue);
+}
