@@ -1,0 +1,55 @@
+%name {
+  font-size: 14px;
+  color: blue;
+}
+// extend는 css로 변환될 때, 각 class들이 and 구분자로 묶여서 나완다.
+// 그래서 초보자는 extend보다 mixin을 쓰는 것이 좋다.
+@mixin name($bold, $color) {
+  font-weight: $bold;
+  background-color: $color;
+}
+
+.a {
+  @extend %name;
+}
+.b {
+  @extend %name;
+}
+.c {
+  @extend %name;
+}
+
+// 추천 extend 기능
+
+%m0auto {
+  width: 1200px;
+  margin: 0 auto;
+}
+
+.visual {
+  background: pink;
+  height: 300px;
+  div {
+    @extend %m0auto;
+    background: rgba(0, 0, 0, 0.5);
+    height: 300px;
+  }
+}
+.main {
+  background: purple;
+  height: 500px;
+  div {
+    @extend %m0auto;
+    background: rgba(0, 0, 0, 0.5);
+    height: 500px;
+  }
+}
+.footer {
+  background: violet;
+  height: 150px;
+  div {
+    @extend %m0auto;
+    background: rgba(0, 0, 0, 0.5);
+    height: 150px;
+  }
+}
