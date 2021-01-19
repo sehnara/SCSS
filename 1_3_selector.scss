@@ -1,0 +1,24 @@
+.a {
+  color: red;
+  ul {
+    border: 1px solid red;
+    > li {
+      //부모에서 상속들어갈때는 이렇게
+      background-color: pink;
+      a {
+        text-decoration: none;
+        &:hover {
+          color: red;
+        }
+      }
+      .bbb {
+        font-size: 11px;
+        color: green;
+        text-indent: 10px; // 들여쓰기
+      }
+      &:last-child {
+        border: 1px dotted yellow;
+      }
+    }
+  }
+}
